@@ -35,6 +35,6 @@ root                    (project root folder)
 ## Authors
 ---
 * TODO: Edward Rivas, edwardriv45a3@gmail.com
-        David Esguerra,
+        David Esguerra, davidjulian.es@gmail.com
         Elias Perez, elias.perez@alumnos.usm.CL
         Shared Ordaz, sharedordaz@live.com.mx
