@@ -15,6 +15,9 @@ class Console:
     
     def delete_parachute(self):
         parachute = self.parachute
-        parachute.pop(0)
 
-    
+        if parachute[0] == "   0": #loses the game
+            parachute[0] == "   X"
+        else:
+            parachute.pop(0)
+
