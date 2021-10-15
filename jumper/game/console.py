@@ -16,12 +16,25 @@ class Console:
     def delete_parachute(self):
         parachute = self.parachute
 
-        if parachute[0] == "   0": #Loses the game and changes the head to an x
-            parachute[0] == "   X"
+
+        if len(parachute) <= 1:
+            parachute[0] = "   X"
+            self.lose_screen()
+            
         else:
-            parachute.pop(0)
+            parachute.pop(0)  #Delete the upper part of the parachute
 
     def print_parachute(self):
         parachute = self.parachute
-        while number != 0:
-            print("      \n", )
+        
+        print() #Empty space.
+        number = 0
+        while number != (len(parachute)):    #Print the elements of the list
+            print (parachute[number])
+            number += 1
+        print("  /|\  ")
+        print("  / \  ")
+
+    def lose_screen(self):
+        print("You lost the game")
+
