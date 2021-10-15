@@ -1,25 +1,16 @@
-"""  
-  ___  
- /___\ 
- \   / 
-  \ /  
-   0   
-  /|\  
-  / \  
-       """
+from game.dictionary import Dictionary
 class Console:
     parachute =["  ___"," /___\ "," \   /","  \ /","   0"]   
 
     def __init__(self):
-        pass
-    
+        dictionary = Dictionary()
+
     def delete_parachute(self):
         parachute = self.parachute
 
-
         if len(parachute) <= 1:
             parachute[0] = "   X"
-            self.lose_screen()
+            print("You lost the game")
             
         else:
             parachute.pop(0)  #Delete the upper part of the parachute
@@ -35,6 +26,15 @@ class Console:
         print("  /|\  ")
         print("  / \  ")
 
-    def lose_screen(self):
-        print("You lost the game")
+    def print_game(self):
+        words = self.dictionary
 
+"""  
+  ___  
+ /___\ 
+ \   / 
+  \ /  
+   0   
+  /|\  
+  / \  
+       """
