@@ -8,6 +8,8 @@ class Guesser:
         
         if letter in letters:
             print("You chosen a repeated letter")
+            self.guess_letter(word)
+            return letter
             
         else:
             letters.append(letter)

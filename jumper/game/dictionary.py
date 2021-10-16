@@ -23,6 +23,6 @@ class Dictionary:
         return game 
 
     def check_if_win(self, lista):
-        if "_ " not in lista:
+        if "_" not in lista:
             print("You won the game CONGRATS")
             exit()

@@ -1,6 +1,7 @@
-from console import Console
-from dictionary import Dictionary
-from guesser import Guesser
+from game.console import Console 
+from game.dictionary import Dictionary
+from game.guesser import Guesser
+import sys
 class Director:
     pass
     def __init__(self):
@@ -22,10 +23,14 @@ class Director:
             letter = self.guesser.guess_letter(word) #Make the user choose a letter within the word
             if letter in word:
                 self.guesser.upload_letter(letter, word, game)
+                self.console.print_parachute()
                 self.console.print_list(game)
+
             else:
                 self.console.delete_parachute()
+                self.console.print_parachute()
+                self.console.print_list(game)
 
             self.dictionary.check_if_win(game)
 
-        
+#print(sys.path)
