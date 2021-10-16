@@ -1,6 +1,6 @@
-import Console
-import Dictionary
-import Guesser
+from console import Console
+from dictionary import Dictionary
+from guesser import Guesser
 class Director:
     pass
     def __init__(self):
