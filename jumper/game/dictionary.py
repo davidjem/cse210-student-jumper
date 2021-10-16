@@ -1,3 +1,4 @@
+import random
 class Dictionary:
 
     words = ["about", "above", "across", "act", "actor", "active", "activity", "add", "afraid", "after", "again", "age", "agree", "air", "all", "alone", "along", "already", "always", "amount", "angry", "another", "answer", "anyone", "anything", "anytime", "appear", "apple", "area", "arm", "army", "around", "arrive", "art", "ask", "attack", "aunt", "autumn", "away", 
@@ -9,3 +10,14 @@ class Dictionary:
 
     def __init__(self):
         pass
+    def choose_word(self):
+        words = self.words
+        word = random.choice(words)
+        return word
+        
+    def make_game(self, word):
+        lenght = len(word)
+        game = []
+        for x in lenght:
+            game.append("_ ")
+        return game 

@@ -25,9 +25,8 @@ class Console:
         print("  /|\  ")
         print("  / \  ")
 
-    def print_game(self, word):
-        length = len(word)
-        
+
+    
 """  
   ___  
  /___\ 
