@@ -25,7 +25,9 @@ class Console:
         print("  /|\  ")
         print("  / \  ")
 
-
+    def print_list(self, lista):
+        strlist = " ".join(lista)
+        print(strlist)
     
 """  
   ___  
@@ -36,6 +38,3 @@ class Console:
   /|\  
   / \  
        """
-
-shared = Console()
-shared.print_game()

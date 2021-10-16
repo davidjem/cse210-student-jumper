@@ -14,10 +14,15 @@ class Dictionary:
         words = self.words
         word = random.choice(words)
         return word
-        
+
     def make_game(self, word):
         lenght = len(word)
         game = []
-        for x in lenght:
-            game.append("_ ")
+        for x in range(lenght):
+            game.append("_")
         return game 
+
+    def check_if_win(self, lista):
+        if "_ " not in lista:
+            print("You won the game CONGRATS")
+            exit()

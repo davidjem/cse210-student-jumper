@@ -8,11 +8,13 @@ class Guesser:
         
         if letter in letters:
             print("You chosen a repeated letter")
-            return letter
+            
         else:
             letters.append(letter)
+            return letter
 
   
     def upload_letter(self, letter, word, list):
         index = word.index(letter) #Know what place have the chosen letter in our word
         list[index] = letter
+
