@@ -1,9 +1,8 @@
-from game.dictionary import Dictionary
 class Console:
     parachute =["  ___"," /___\ "," \   /","  \ /","   0"]   
 
     def __init__(self):
-        dictionary = Dictionary()
+        pass
 
     def delete_parachute(self):
         parachute = self.parachute
@@ -26,9 +25,9 @@ class Console:
         print("  /|\  ")
         print("  / \  ")
 
-    def print_game(self):
-        words = self.dictionary
-
+    def print_game(self, word):
+        length = len(word)
+        
 """  
   ___  
  /___\ 
@@ -38,3 +37,6 @@ class Console:
   /|\  
   / \  
        """
+
+shared = Console()
+shared.print_game()
