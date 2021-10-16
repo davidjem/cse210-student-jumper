@@ -9,7 +9,6 @@ class Console:
 
         if len(parachute) <= 1:
             parachute[0] = "   X"
-            print("You lost the game")
             
         else:
             parachute.pop(0)  #Delete the upper part of the parachute
@@ -28,6 +27,15 @@ class Console:
     def print_list(self, lista):
         strlist = " ".join(lista)
         print(strlist)
+
+    def lose_screen(self, word):
+        print("You lost the game")
+        print(f"The word was {word}")
+        input("Press any key to exit")
+        exit()
+
+    def print_whatever(self, whatever):
+        print(whatever)
     
 """  
   ___  
