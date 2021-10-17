@@ -21,13 +21,15 @@ class Director:
 
         self.console.print_parachute() #Print the parachute
         while True:
+            if "   X" in parachute:
+                self.console.lose_screen(word)
+                
             letter = self.guesser.guess_letter(word) #Make the user choose a letter within the word
             if letter in word:
                 self.guesser.upload_letter(letter, word, game)
                 self.console.print_parachute()
                 self.console.print_list(game)
-            elif "   X" in parachute:
-                self.console.lose_screen(word)
+
             else:
                 self.console.delete_parachute()
                 self.console.print_parachute()
